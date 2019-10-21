@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>chamado-cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+    <ion-content>
+        <form [formGroup]="formGroup"> <!-- vínculo com a variável formGroup  -->
+          <ion-list>
+            <ion-item>
+              <ion-label floating>Data</ion-label>
+              <!-- formControlName -> Atributo do formgroup -->
+              <ion-input formControlName="data" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>IdFuncionario</ion-label>
+                <ion-input formControlName="idFuncionario" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>NomeEquipamento</ion-label>
+                <ion-input formControlName="nomeEquipamento" type="text"></ion-input>
+            </ion-item>
+      <ion-item>
+                <ion-label floating>Defeito</ion-label>
+                <ion-input formControlName="defeito" type="text"></ion-input>
+            </ion-item>
+      
+        </ion-list>
+        <ion-button expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+        </form>
+      
+      
+</ion-content>

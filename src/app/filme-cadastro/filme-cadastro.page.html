@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>filme-cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formGroup"> <!-- vínculo com a variável formGroup  -->
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Titulo</ion-label>
+        <!-- formControlName -> Atributo do formgroup -->
+        <ion-input formControlName="titulo" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Diretor</ion-label>
+          <ion-input formControlName="diretor" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Ano</ion-label>
+          <ion-input formControlName="anoLancamento" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Producao</ion-label>
+        <ion-input formControlName="producao" type="text"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label floating>Genero</ion-label>
+        <ion-input formControlName="genero" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Resumo</ion-label>
+      <ion-input formControlName="resumo" type="text"></ion-input>
+  </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+  </form>
+</ion-content>

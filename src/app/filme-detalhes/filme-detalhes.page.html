@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>filme-detalhes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formGroup">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Titulo</ion-label>
+        <ion-input formControlName="titulo" value="{{filme.titulo}}" type="text">
+          </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Diretor</ion-label>
+          <ion-input formControlName="diretor"  value="{{filme.diretor}}" type="text">
+             </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>AnoLancamento</ion-label>
+          <ion-input formControlName="anoLancamento"  value="{{filme.anoLancamento}}" type="text">
+            </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Producao</ion-label>
+        <ion-input formControlName="producao"  value="{{filme.producao}}" type="text">
+          </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Genero</ion-label>
+      <ion-input formControlName="genero"  value="{{filme.genero}}" type="text">
+        </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Resumo</ion-label>
+    <ion-input formControlName="resumo"  value="{{filme.resumo}}" type="text">
+      </ion-input>
+</ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="atualizar()">Atualizar</ion-button>
+  <ion-button color="danger" expand="full" (click)="confirm()">Excluir</ion-button>
+  </form>
+</ion-content>
+
