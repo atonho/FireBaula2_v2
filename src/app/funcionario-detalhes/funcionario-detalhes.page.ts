@@ -27,8 +27,8 @@ export class FuncionarioDetalhesPage implements OnInit {
 
     // Inicializando o formulário
     this.formGroup = this.formB.group({
-      nome : [],
       matricula : [],
+      nome : [],
       email : [],
       salario : [],
       cargo : [],
@@ -37,13 +37,13 @@ export class FuncionarioDetalhesPage implements OnInit {
 
   ngOnInit() {
     // Carregar os dados do cliente selecionado
-    this.db.collection("funcionario") // Seleciona a coleção cliente
+    this.db.collection('funcionarios') // Seleciona a coleção cliente
     .doc(this.id).get().subscribe(response=>{ // .doc seleciona o cliente com base no id
 
       // Atribuindo os dados do response para a variável cliente
       this.funcionario.id = this.id; 
-      this.funcionario.nome = response.data().nome;
       this.funcionario.matricula = response.data().matricula;
+      this.funcionario.nome = response.data().nome;
       this.funcionario.email = response.data().email;
       this.funcionario.salario = response.data().salario;
       this.funcionario.cargo = response.data().cargo;
