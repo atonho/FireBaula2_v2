@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'logoff', loadChildren: './logoff/logoff.module#LogoffPageModule' },
   { path: 'cliente-cadastro', loadChildren: './cliente-cadastro/cliente-cadastro.module#ClienteCadastroPageModule' },
-  { path: 'cliente-detalhes', loadChildren: './cliente-detalhes/cliente-detalhes.module#ClienteDetalhesPageModule' },  { path: 'filme-cadastro', loadChildren: './filme-cadastro/filme-cadastro.module#FilmeCadastroPageModule' },
+  { path: 'cliente-detalhes', loadChildren: './cliente-detalhes/cliente-detalhes.module#ClienteDetalhesPageModule' },
+  { path: 'filme-cadastro', loadChildren: './filme-cadastro/filme-cadastro.module#FilmeCadastroPageModule' },
   { path: 'filme-detalhes', loadChildren: './filme-detalhes/filme-detalhes.module#FilmeDetalhesPageModule' },
   { path: 'funcionario-cadastro', loadChildren: './funcionario-cadastro/funcionario-cadastro.module#FuncionarioCadastroPageModule' },
   { path: 'funcionario-detalhes', loadChildren: './funcionario-detalhes/funcionario-detalhes.module#FuncionarioDetalhesPageModule' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'chamado-detalhes', loadChildren: './chamado-detalhes/chamado-detalhes.module#ChamadoDetalhesPageModule' },
   { path: 'funcionario', loadChildren: './funcionario/funcionario.module#FuncionarioPageModule' },
   { path: 'chamado', loadChildren: './chamado/chamado.module#ChamadoPageModule' },
-  { path: 'filme', loadChildren: './filme/filme.module#FilmePageModule' }
+  { path: 'filme', loadChildren: './filme/filme.module#FilmePageModule' },
+  { path: 'games', loadChildren: './games/games.module#GamesPageModule' }
 
 ];
 
