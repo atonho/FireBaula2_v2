@@ -35,11 +35,11 @@ let firingTimer = 0;
 let stateText;
 let livingEnemies = [];
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-games',
+  templateUrl: './games.page.html',
+  styleUrls: ['./games.page.scss'],
 })
-export class HomePage {
+export class GamesPage {
 
   constructor(private menuCtrl: MenuController) {
     game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'space-invaders',
