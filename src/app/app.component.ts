@@ -57,6 +57,21 @@ export class AppComponent {
       url: '/games',
       icon: 'person-add'
     },
+    {
+      title: 'Rotas',
+      url: '/rotas',
+      icon: 'person-add'
+    },
+    {
+      title: 'Exemplo3',
+      url: '/exemplo3',
+      icon: 'person-add'
+    },
+    {
+      title: 'Exemplo4',
+      url: '/exemplo4',
+      icon: 'person-add'
+    },
  
     {
       title: 'Logoff',

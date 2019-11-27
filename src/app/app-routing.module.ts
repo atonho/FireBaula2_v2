@@ -30,7 +30,11 @@ const routes: Routes = [
   { path: 'funcionario', loadChildren: './funcionario/funcionario.module#FuncionarioPageModule' },
   { path: 'chamado', loadChildren: './chamado/chamado.module#ChamadoPageModule' },
   { path: 'filme', loadChildren: './filme/filme.module#FilmePageModule' },
-  { path: 'games', loadChildren: './games/games.module#GamesPageModule' }
+  { path: 'games', loadChildren: './games/games.module#GamesPageModule' },
+  { path: 'rotas', loadChildren: './rotas/rotas.module#RotasPageModule' },
+  { path: 'exemplo3', loadChildren: './exemplo3/exemplo3.module#Exemplo3PageModule' },
+  { path: 'exemplo4', loadChildren: './exemplo4/exemplo4.module#Exemplo4PageModule' },
+
 
 ];
 
